@@ -1,0 +1,15 @@
+table {
+    @include paragraphSpacing;
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 0.7em;
+}
+
+tbody > tr:nth-child(odd) {
+    background: $grey-light;
+}

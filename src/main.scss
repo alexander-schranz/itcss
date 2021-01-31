@@ -1,0 +1,59 @@
+// ITCSS Structure is used here: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+
+// Settings - (scss variables for font, grid configuration, colors)
+@import '1-settings/breakpoint';
+@import '1-settings/color';
+@import '1-settings/container';
+@import '1-settings/font';
+@import '1-settings/grid';
+@import '1-settings/h';
+@import '1-settings/icomoon';
+@import '1-settings/paragraph';
+@import '1-settings/small';
+@import '1-settings/zindex';
+@import '../../../public/website/fonts/icomoon-sulu/variables';
+
+// Tools - (mixins and functions for make coding easier)
+@import '2-tools/container-link';
+@import '2-tools/map-math';
+@import '2-tools/media';
+@import '2-tools/paragraph-spacing';
+
+// Generic - (generic css like reset, normalize, box sizing)
+@import '../node_modules/normalize.css/normalize';
+@import '3-generic/box-sizing';
+@import '3-generic/focus';
+@import '3-generic/font';
+
+// Elements - (style specific html tags e.g.: a, p, ul li, ol li)
+@import '4-elements/a';
+@import '4-elements/body';
+@import '4-elements/button';
+@import '4-elements/figure';
+@import '4-elements/img';
+@import '4-elements/h';
+@import '4-elements/input';
+@import '4-elements/label';
+@import '4-elements/li';
+@import '4-elements/p';
+@import '4-elements/table';
+
+// Objects - (layout object like media object, grid, container, stack, inline)
+@import '5-objects/container';
+@import '5-objects/grid';
+@import '5-objects/inline';
+@import '5-objects/media';
+@import '5-objects/stack';
+@import '5-objects/width';
+
+// Components - (layout components like teaser, navigation, header, footer)
+@import '6-components/button';
+@import '6-components/footer';
+@import '6-components/header';
+@import '6-components/menu';
+@import '6-components/teaser';
+
+// Utilities - (utility classes like text-center, text-right, text-left)
+@import '7-utilities/none';
+@import '7-utilities/space';
+@import '7-utilities/text';

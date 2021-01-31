@@ -1,0 +1,10 @@
+// define today the box sizing for the project. most common today is using "border-box" for all elements
+// this value should not be changed here as it has side effect on all elements
+// @see also: https://css-tricks.com/box-sizing/
+* {
+    &,
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}

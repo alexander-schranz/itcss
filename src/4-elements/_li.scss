@@ -1,0 +1,13 @@
+ul,
+ol {
+    padding-left: 1.75em;
+
+    @include paragraphSpacing();
+
+    ul,
+    ol {
+        // no space in nested lists
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}

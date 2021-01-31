@@ -1,0 +1,28 @@
+input,
+textarea,
+select {
+    border: 1px solid $grey-light;
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+
+    &:focus {
+        box-shadow: 0 0 10px $grey-light;
+        outline: none;
+    }
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+    position: absolute;
+    transform: translateY(5px);
+    width: auto;
+
+    + label {
+        padding-left: 20px;
+    }
+}
+
+textarea {
+    resize: vertical;
+}

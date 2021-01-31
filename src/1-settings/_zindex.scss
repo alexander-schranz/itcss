@@ -1,0 +1,9 @@
+// define any used z-index here
+$z-overlay: 1000;
+$z-menu: 500;
+$z-absolute: 50;
+$z-content: 10;
+
+// use z-index: $z-menu + 1; to have relative zindex to similar elements on the same level
+// try to avoid zindex when not really needed:
+// @see https://danielrotter.at/2020/04/08/avoid-z-index-whenever-possible.html

@@ -1,0 +1,6 @@
+// add focus styling to every focusable element so we don't forget to define
+// a focus styling for them, never just disable the :focus on an element as
+// it is important to have a focus state for accessibility:
+*:focus {
+    outline: 1px dashed $focus-color;
+}

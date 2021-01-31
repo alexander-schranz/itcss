@@ -1,0 +1,5 @@
+figure {
+    @include paragraphSpacing; // needed because tables are wrapped by figure tag in ckeditor 5
+    margin-left: 0;
+    margin-right: 0;
+}

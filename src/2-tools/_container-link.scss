@@ -1,0 +1,15 @@
+// the container link is a mixin to fix the nested link problem
+// the container which should be clickable should be position: relative
+// the link should be set with the _containerLink mixin element
+// @see https://jsfiddle.net/tpL2f9ab/3/
+@mixin containerLink() {
+    &::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 100%;
+        @content;
+    }
+}

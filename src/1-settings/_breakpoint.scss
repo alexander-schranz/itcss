@@ -1,0 +1,7 @@
+// Breakpoints set by max-width value used in the project.
+// The keys are used in the tools/_media.scss (media or mediaEachMax) and tools/_map_math.scss
+$breakpoints: (
+    laptop: 1200px,     // 992px - 1200px
+    tablet: 991px,      // 768px -  991px
+    mobile: 767px,      //   0px -  767px
+);
