@@ -1,8 +1,8 @@
 $container-width: 1380px;
 $container-wide-width: 1564px;
-$container-space: 60px;
+$container-space: 64px;
 $container-spaces: (
-        default: $container-space,
-        tablet: 40px,
-        mobile: 30px,
+    default: $container-space,
+    tablet: 48px,
+    mobile: 32px,
 );

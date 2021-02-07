@@ -1,4 +1,4 @@
-.container {
+.o-container {
     margin-left: auto;
     margin-right: auto;
     max-width: $container-width;
@@ -14,7 +14,7 @@
     }
 }
 
-.container-wide {
+.o-container-wide {
     margin: 0 auto;
     max-width: $container-wide-width;
 
@@ -29,7 +29,7 @@
     }
 }
 
-.container-left {
+.o-container-left {
     padding-right: calc(#{percentage(5 / 12)} + 10px);
 
     @include media('<tablet') {
@@ -37,7 +37,7 @@
     }
 }
 
-.container-right {
+.o-container-right {
     padding-left: calc(#{percentage(5 / 12)} + 10px);
 
     @include media('<tablet') {
@@ -45,17 +45,17 @@
     }
 }
 
-.container-big {
+.o-container-big {
     margin: 0 auto;
     max-width: 960px;
 }
 
-.container-medium {
+.o-container-medium {
     margin: 0 auto;
     max-width: 720px;
 }
 
-.container-small {
+.o-container-small {
     margin: 0 auto;
     max-width: 540px;
 }

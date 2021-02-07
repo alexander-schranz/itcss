@@ -1,0 +1,21 @@
+.o-media {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.o-media__item {
+    flex-shrink: 1;
+    flex-grow: 0;
+
+    &:first-child {
+        margin-right: $media-gap;
+    }
+
+    &:last-child {
+        margin-left: $media-gap;
+    }
+}
+
+.o-media__content {
+    flex: 1;
+}

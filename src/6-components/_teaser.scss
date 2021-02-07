@@ -1,10 +1,10 @@
-.teaser {
+.c-teaser {
     border: 1px solid $grey;
     padding: 40px;
     position: relative;
 }
 
-.teaser__title {
+.c-teaser__title {
     margin-bottom: 5px;
     overflow: hidden;
 
@@ -18,7 +18,7 @@
     }
 }
 
-.teaser__description {
+.c-teaser__description {
     margin-bottom: 20px;
     margin-top: 5px;
     overflow: hidden;
@@ -28,7 +28,7 @@
     ));
 }
 
-.teaser__link {
+.c-teaser__link {
     color: $blue;
     font-weight: bold;
     margin-top: 20px;

@@ -1,35 +1,55 @@
-# Writing CSS which make me happy
+# ITCSS, BEM and Rethinking Design Practices
 
-## Instruction
+The way of writing CSS which did make me happy. 🤗
+
+## Introduction
+
+Hello 👋,
+
+My name is Alexander Schranz ([alex_s_](https://twitter.com/alex_s_)) and I'm fulltime Webdeveloper
+working on the [SULU CMS](https://sulu.io/?utm_source=github&utm_medium=repository&utm_campaign=alex-itcss)
+and did based on that created a lot of websites.
 
 After a long time of dissatisfaction I did find some time ago a way
 to structure css the way which did make me happy to work with css.
 This repository should show the structure and code syntax I used and
-is mostly for me the CSS I'm using to begin a project.
+is mostly for me to reference new developers in the team to it.
 
 It is a combination by the following sources:
 
- - [ITCSS](https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528) develop by [Harry Roberts (@csswizardry)](https://csswizardry.com/)
- - [Rethinking Design Practices](https://www.youtube.com/watch?v=xxbc3wAztl0) by [Mark Dalgleish](https://twitter.com/markdalgleish)
- - [BEM](http://getbem.com/) a css methodology by [Yandex](https://yandex.com/)
+ - 📐 [ITCSS](https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528) develop by [Harry Roberts (@csswizardry)](https://csswizardry.com/)
+ - 🔥 [Rethinking Design Practices](https://www.youtube.com/watch?v=xxbc3wAztl0) by [Mark Dalgleish](https://twitter.com/markdalgleish)
+ - ⚒️ [BEM](http://getbem.com/) a css methodology by [Yandex](https://yandex.com/)
+
+At this place I really want to thank [Harry Roberts](https://twitter.com/csswizardry)
+and [Mark Dalgleish](https://twitter.com/markdalgleish) as they were a
+great inspiration how I write CSS today and they share a lot of there
+knowledge ❤️. You definitely should follow them on Twitter.
 
 **Table of Contents**
 
- - [Instruction](#instruction)
+ - [Introduction](#introduction)
  - [ITCSS](#itcss)
- - [Objects](#objects)
+ - [Objects](#objects) (Rethinking Design Practices)
  - [BEM](#bem)
+ - [Conclusion](#conclusion)
 
 ## ITCSS
 
 The directory structure you will find in the `src` directory comes
 from [ITCSS](https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528)
-which was build by [Harry Roperts (csswizardry)](https://csswizardry.com/)
+which was build by [Harry Roberts (csswizardry)](https://csswizardry.com/)
 a Consultant Web Performance Engineer.
 
 I can really recommend to read the blog on [xfive.co](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture)
-to get more detail. But here a short overview about the directory
-structure or how they are called in ITCSS "Layers":
+to get more detail. Another example repository beside this one from the
+developer of ITCSS [Harry Roberts](https://csswizardry.com/) can be found on [github.com/inuitcss](https://github.com/inuitcss/inuitcss).
+
+But here a short overview about the directory structure or how they are called in ITCSS "Layers":
+
+![XVISE ITCSS Layers](https://www.xfivecdn.com/xfive/wp-content/uploads/2016/02/01083650/itcss-layers2.svg)
+
+(Source: [xfive.co](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture))
 
 ### ITCSS - `Settings`
 
@@ -122,7 +142,7 @@ opinion be not part of any objects component.
 Beside the most common [media object](https://css-tricks.com/media-object-bunch-ways/)
 I can recommend [Mark Dalgleish](https://twitter.com/markdalgleish)
 talk about [Rethinking Design Patterns](https://www.youtube.com/watch?v=jnV1u67_yVg)
-in the [Objects](#objects) section we will tak more about thhem.
+in the [Objects](#objects) section we will tak more about them.
 
 Common Examples:
 
@@ -258,3 +278,39 @@ Modifiers as I think its better to have different block elements
 then uncompatible modifiers. I common mistake I see here is for
 example having one teaser BEM css with a lot of modifiers
 instead of having different BEM teasers like `teaser-small`, `teaser-big`.
+
+### BEM ITCSS Prefixes
+
+If you look at example repository from [Harry Roberts (@csswizardry)](https://csswizardry.com/)
+on [Github](https://github.com/inuitcss/inuitcss). You see is also using
+the BEM syntax to create to write its components. But there is also a small
+prefix in front of every components, object, utility class.
+
+ - `o-` for `object` e.g.: `o-grid`
+ - `c-` for `components` e.g.: `c-button`
+ - `u-` for `object` e.g.: `u-none`
+
+Think this makes also reviews of the code easier. So you can easier find
+errors that object define design instead of just layout or that components
+accidentally adding spacing around them instead of using a object / layout
+component for it. Linters could also make sure that 2 component classes
+are not used on the same element to avoid strange side effects.
+
+## Conclusion
+
+The conclusion of my experience yet there a lot of principles and great
+people out there in the web community which did share us great reusable ways
+to build our CSS, so we should use them and try to improve them for our way
+to write CSS. 
+
+What I have to say to the end of this article, I hope I could give you a
+great overview about how I write CSS and maybe you could find here some
+inspiration, every feedback is welcome.
+
+Maybe you will not use ITCSS in the future I still recommend you to use
+some widely share CSS Methodology (e.g.: SMACSS, OOCSS, Atomic Design, ...)
+or use just one as fundamental base and document your changes for it in
+public repository. This will help you to get other programmers easier
+into your codebase and help you to develop your websites faster.
+
+Thank you for reading this!

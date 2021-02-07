@@ -1,0 +1,11 @@
+$stack-gap: 30px;
+
+.o-stack {
+    margin-top: -$stack-gap;
+    margin-bottom: -$stack-gap;
+}
+
+.o-stack > * {
+    margin-top: $stack-gap;
+    margin-bottom: $stack-gap;
+}

@@ -1,4 +1,4 @@
-.space-after-big {
+.u-space-after-big {
     margin-bottom: 80px;
 
     @include media('<tablet') {
@@ -6,7 +6,7 @@
     }
 }
 
-.space-after-medium {
+.u-space-after-medium {
     margin-bottom: 30px;
 
     @include media('<tablet') {
@@ -14,7 +14,7 @@
     }
 }
 
-.space-before-medium {
+.u-space-before-medium {
     margin-top: 30px;
 
     @include media('<tablet') {
@@ -22,7 +22,7 @@
     }
 }
 
-.space-after-small {
+.u-space-after-small {
     margin-bottom: 10px;
 
     @include media('<tablet') {
@@ -30,13 +30,13 @@
     }
 }
 
-.space-mobile-after-small {
+.u-space-mobile-after-small {
     @include media('<tablet') {
         margin-bottom: 7px;
     }
 }
 
-.space-big {
+.u-space-big {
     margin: 80px 0;
 
     @include media('<tablet') {
@@ -44,7 +44,7 @@
     }
 }
 
-.space-big-before {
+.u-space-big-before {
     margin-top: 80px;
 
     @include media('<tablet') {
@@ -52,7 +52,7 @@
     }
 }
 
-.space-big-after {
+.u-space-big-after {
     margin-bottom: 80px;
 
     @include media('<tablet') {

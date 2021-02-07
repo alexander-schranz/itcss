@@ -1,11 +1,11 @@
-// mostly used in combinatin with the grid__item element
+// mostly used in combination with the grid__item element
 [class^='width-'],
 [class*=' width-'] {
     flex: 0 0 auto;
 }
 
 @for $i from 1 through $grid-columns {
-    .width-#{$i} {
+    .o-width-#{$i} {
         width: percentage($i / $grid-columns);
     }
 }
@@ -13,7 +13,7 @@
 @for $i from 1 through $grid-columns {
     @each $breakpoint-name, $breakpoint in $breakpoints {
         @include mediaMax($breakpoint) {
-            .width-#{$breakpoint-name}-#{$i} {
+            .o-width-#{$breakpoint-name}-#{$i} {
                 width: percentage($i / $grid-columns);
             }
         }

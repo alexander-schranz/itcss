@@ -1,5 +1,5 @@
 // button styling as css class so it can be used also on a tags
-.button {
+.c-button {
     background: $blue;
     border: 1px solid $blue;
     color: $white;
@@ -30,13 +30,13 @@
     }
 }
 
-.button--full {
+.c-button--full {
     display: block;
     text-align: center;
     width: 100%;
 }
 
-.button--transparent {
+.c-button--transparent {
     background: transparent;
     color: $blue;
 
@@ -47,7 +47,7 @@
     }
 }
 
-.button--dark {
+.c-button--dark {
     background-color: $light-blue;
     border-color: $light-blue;
     color: $white;
