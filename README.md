@@ -2,6 +2,8 @@
 
 The way of writing CSS which did make me happy. 🤗
 
+![Header](images/logos/social.png)
+
 ## Introduction
 
 Hello 👋,
