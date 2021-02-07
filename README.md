@@ -1,20 +1,29 @@
-# Instruction
+# Writing CSS which make me happy
+
+## Instruction
 
 After a long time of dissatisfaction I did find some time ago a way
-to structure css the way which did make most sense for me. This 
-repository should show the structure and code syntax I used and is
-mostly for me the css I'm using to begin a project.
+to structure css the way which did make me happy to work with css.
+This repository should show the structure and code syntax I used and
+is mostly for me the CSS I'm using to begin a project.
 
-In short its a combination by the following sources:
+It is a combination by the following sources:
 
- - [ITCSS](#itcss) develop by [Harry Roperts (@csswizardry)](https://csswizardry.com/)
- - [BEM](#bem) a css methodology by [Yandex](https://yandex.com/)
- - [Rethinking Design Practices](#objects) by [Mark Dalgleish](https://twitter.com/markdalgleish)
+ - [ITCSS](https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528) develop by [Harry Roberts (@csswizardry)](https://csswizardry.com/)
+ - [Rethinking Design Practices](https://www.youtube.com/watch?v=xxbc3wAztl0) by [Mark Dalgleish](https://twitter.com/markdalgleish)
+ - [BEM](http://getbem.com/) a css methodology by [Yandex](https://yandex.com/)
+
+**Table of Contents**
+
+ - [Instruction](#instruction)
+ - [ITCSS](#itcss)
+ - [Objects](#objects)
+ - [BEM](#bem)
 
 ## ITCSS
 
 The directory structure you will find in the `src` directory comes
-from [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
+from [ITCSS](https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528)
 which was build by [Harry Roperts (csswizardry)](https://csswizardry.com/)
 a Consultant Web Performance Engineer.
 
@@ -130,7 +139,8 @@ The components is the layer where we mostly will write the
 css in project. As in this layer we define how the navigation,
 footer, header and other components will look like. Its very
 important that components itself do not define any spaces around
-them. This make 
+them. Have here a look at [Mark Dalgleish](https://twitter.com/markdalgleish)
+Talk about [Rethinking Design Practices](https://www.youtube.com/watch?v=xxbc3wAztl0).
 
 Common Examples:
 
@@ -160,25 +170,22 @@ More Examples:
 
  - _space.scss
 
-## BEM
-
-Beside the structuring I use the widely spreaded [BEM](http://getbem.com/)
-syntax to write my component. In most cases I try to avoid the
-Modifiers as I think its better to have different block elements
-then uncompatible modifiers. I common mistake I see here is for
-example having one teaser BEM css with a lot of modifiers
-instead of having different BEM teasers like `teaser-small`, `teaser-big`.
-
 ## Objects
+
+Object or layout components are one of the important things inside a project
+if false used the whole project could be a mess. Here I will list my most used
+object or layout components which every project could maybe profit from.
 
 ### Object - `Container`
 
 The container exist in mostly every common CSS Framework for 
 example [Bootstrap](https://getbootstrap.com/docs/5.0/layout/containers/).
-The task of a container object is the center content and give space
+The task of a container object is to center content and give space
 to it to the screen.  
 This is mostly done to keep content readable because if the text
 is too long in one line it is not longer readable to the user. 
+
+![Container Example](images/container.png)
 
 ### Object - `Grid`
 
@@ -193,14 +200,61 @@ and bottom and just inside gaps. Also the width of the grid
 items are controlled over separated width classes as they are
 reusable on other none grid elements.
 
+![Grid Example](images/grid.png)
+
 ### Object - `Media`
 
-... coming soon
+The media object was first published by [Nicole Sullivan](https://twitter.com/stubbornella)
+on her [blog](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/)
+it is a reusable pattern for an object which has fixed with
+(media) beside content (mostly text).
+
+The container which has the media inside it will shrink the
+minimal size it has and the container with the content will
+grow the max size it gets. This pattern is common used on 
+social media platform where profile images has fixed width
+and the text content can grow the size of its parent
+container.
+
+The media object implementation can also be found on the
+[CSS-Tricks Blogpost here](https://css-tricks.com/media-object-bunch-ways/)
+
+![Media Example](images/media.png)
+
+![Media2 Example](images/media-2.png)
 
 ### Object - `Stack`
 
-... coming soon
+The stack is an object which will make clear that all child
+elements of them have the same space in between. It maybe
+has additional modifiers so the gap between the elements
+can be configured over them. The stack does not have any
+effects on horizontal spacing to other elements just the
+vertical space between the child elements in it.
+
+This is object is also part of [Mark Dalgleish](https://twitter.com/markdalgleish)
+Layout Components in his talk about [Rethinking Design Practices (Stack Component 13:00)](https://youtu.be/xxbc3wAztl0?t=780).
+
+![Stack Example](images/stack.png)
 
 ### Object - `Inline`
 
-... coming soon
+The inline object make it easy to work with components which
+has a dynamic width. The inline object just make sure that all
+components which are in there have the same space between them
+vertical and horizontal. Like the other object and components
+it will not have any space out of it.
+
+This is object is also part of [Mark Dalgleish](https://twitter.com/markdalgleish)
+Layout Components in his talk about [Rethinking Design Practices (Inline Component 13:50)](https://youtu.be/xxbc3wAztl0?t=830).
+
+![Inline Example](images/inline.png)
+
+## BEM
+
+Beside the structuring I use the widely spreaded [BEM](http://getbem.com/)
+syntax to write my component. In most cases I try to avoid the
+Modifiers as I think its better to have different block elements
+then uncompatible modifiers. I common mistake I see here is for
+example having one teaser BEM css with a lot of modifiers
+instead of having different BEM teasers like `teaser-small`, `teaser-big`.
