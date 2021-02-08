@@ -283,20 +283,23 @@ instead of having different BEM teasers like `teaser-small`, `teaser-big`.
 
 ### BEM ITCSS Prefixes
 
-If you look at example repository from [Harry Roberts (@csswizardry)](https://csswizardry.com/)
+If you look at example repository from [Harry Roberts](https://csswizardry.com/)
 on [Github](https://github.com/inuitcss/inuitcss). You see is also using
 the BEM syntax to create to write its components. But there is also a small
 prefix in front of every components, object, utility class.
 
- - `o-` for `object` e.g.: `o-grid`
+ - `o-` for `objects` e.g.: `o-grid`
  - `c-` for `components` e.g.: `c-button`
- - `u-` for `object` e.g.: `u-none`
+ - `u-` for `utilities` e.g.: `u-none`
 
 Think this makes also reviews of the code easier. So you can easier find
 errors that object define design instead of just layout or that components
 accidentally adding spacing around them instead of using a object / layout
 component for it. Linters could also make sure that 2 component classes
 are not used on the same element to avoid strange side effects.
+
+See here also the Blog Post [ITCSS with namespaces](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/)
+from [Harry Roberts](https://csswizardry.com/).
 
 ## Conclusion
 
