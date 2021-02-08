@@ -319,3 +319,5 @@ public repository. This will help you to get other programmers easier
 into your codebase and help you to develop your websites faster.
 
 Thank you for reading this!
+
+More articles on Github from me can be found [here](https://github.com/topics/alexander-schranz-article).
