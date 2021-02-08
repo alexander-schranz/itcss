@@ -70,7 +70,7 @@ More Examples:
 
  - [_h.scss](src/1-settings/_h.scss)
  - [_icomoon.scss](src/1-settings/_icomoon.scss)
- - [_paragraph-space.scss](src/1-settings/_paragraph-space.scss)
+ - [_paragraph.scss](src/1-settings/_paragraph.scss)
  - [_small.scss](src/1-settings/_small.scss)
  - [_zindex.scss](src/1-settings/_zindex.scss)
 
@@ -196,7 +196,7 @@ More Examples:
 
 Object or layout components are one of the important things inside a project
 if false used the whole project could be a mess. Here I will list my most used
-object or layout components which every project could maybe profit from.
+object or layout components which every project could profit from.
 
 ### Object - `Container`
 
@@ -248,7 +248,7 @@ The media object implementation can also be found on the
 ### Object - `Stack`
 
 The stack is an object which will make clear that all child
-elements of them have the same space in between. It maybe
+elements of them have the same space in between. It can
 has additional modifiers so the gap between the elements
 can be configured over them. The stack does not have any
 effects on horizontal spacing to other elements just the
