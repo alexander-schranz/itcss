@@ -13,12 +13,13 @@
 @import '1-settings/small';
 @import '1-settings/stack';
 @import '1-settings/zindex';
-@import '../../../public/website/fonts/icomoon-sulu/variables';
+// @import '../../../public/website/fonts/icomoon-sulu/variables';
 
 // Tools - (mixins and functions for make coding easier)
-@import '2-tools/container-link';
-@import '2-tools/map-math';
-@import '2-tools/media';
+@import '2-tools/container-link'; // @import '../node_modules/@sulu/web/packages/scss/tools/container-link/container-link';
+@import '2-tools/map-math'; // @import '../node_modules/@sulu/web/packages/scss/tools/map-math/map-math';
+@import '2-tools/media'; // @import '../node_modules/@sulu/web/packages/scss/tools/media/media';
+@import '2-tools/dot-dot-dot'; // @import '../node_modules/@sulu/web/packages/scss/tools/dot-dot-dot/dot-dot-dot';
 @import '2-tools/paragraph-spacing';
 
 // Generic - (generic css like reset, normalize, box sizing)
@@ -59,3 +60,4 @@
 @import '7-utilities/none';
 @import '7-utilities/space';
 @import '7-utilities/text';
+// @import '../../../public/website/fonts/icomoon-sulu/style.scss';

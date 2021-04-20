@@ -1,11 +1,11 @@
 .c-teaser {
     border: 1px solid $grey;
-    padding: 40px;
+    padding: 32px;
     position: relative;
 }
 
 .c-teaser__title {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     overflow: hidden;
 
     .teaser:hover &,
@@ -19,8 +19,8 @@
 }
 
 .c-teaser__description {
-    margin-bottom: 20px;
-    margin-top: 5px;
+    margin-bottom: 24px;
+    margin-top: 8px;
     overflow: hidden;
 
     @include mediaEachMax((
@@ -31,7 +31,7 @@
 .c-teaser__link {
     color: $blue;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 24px;
     text-decoration: none;
     @include containerLink;
 
